@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Mohamed Abdallah - Full Stack & AI Engineer building intelligent digital solutions.">
+  <meta name="keywords" content="web developer, full-stack, AI engineer, frontend, backend, portfolio">
+  <meta name="author" content="Mohamed Abdallah">
+  <title>Mohamed Abdallah | Full Stack & AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header & Navigation -->
+  <header class="header" id="header">
+    <div class="container header__container">
+      <a href="#home" class="logo">MA</a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero__container">
+        <div class="hero__content reveal-left">
+          <span class="hero__greeting">Hello, I'm</span>
+          <h1 class="hero__name" id="heroName">Marcus Chen</h1>
+          <h2 class="hero__role" id="heroRole">Full-Stack Web Developer</h2>
+          <p class="hero__tagline" id="heroTagline">Building elegant digital solutions that bridge creativity and
+            technology.</p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--secondary">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero__visual reveal-right">
+          <div class="hero__graphic">
+            <svg viewBox="0 0 400 400" class="hero__svg">
+              <defs>
+                <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="heroGradientReverse" x1="100%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+              <!-- Outer gear ring -->
+              <circle cx="200" cy="200" r="160" fill="none" stroke="url(#heroGradient)" stroke-width="2"
+                class="hero__circle hero__circle--1" />
+              <!-- Gear teeth - 12 symmetric teeth -->
+              <g class="hero__gear-teeth" style="transform-origin: 200px 200px;">
+                <rect x="195" y="35" width="10" height="20" fill="url(#heroGradient)" rx="2" />
+                <rect x="195" y="35" width="10" height="20" fill="url(#heroGradient)" rx="2"
+                  transform="rotate(30, 200, 200)" />
+                <rect x="195" y="35" width="10" height="20" fill="url(#heroGradient)" rx="2"
+                  transform="rotate(60, 200, 200)" />
+                <rect x="195" y="35" width="10" height="20" fill="url(#heroGradient)" rx="2"
+                  transform="rotate(90, 200, 200)" />
+                <rect x="195" y="35" width="10" height="20" fill="url(#heroGradient)" rx="2"
+                  transform="rotate(120, 200, 200)" />
+                <rect x="195" y="35" width="10" height="20" fill="url(#heroGradient)" rx="2"
+                  transform="rotate(150, 200, 200)" />
+                <rect x="195" y="35" width="10" height="20" fill="url(#heroGradient)" rx="2"
+                  transform="rotate(180, 200, 200)" />
+                <rect x="195" y="35" width="10" height="20" fill="url(#heroGradient)" rx="2"
+                  transform="rotate(210, 200, 200)" />
+                <rect x="195" y="35" width="10" height="20" fill="url(#heroGradient)" rx="2"
+                  transform="rotate(240, 200, 200)" />
+                <rect x="195" y="35" width="10" height="20" fill="url(#heroGradient)" rx="2"
+                  transform="rotate(270, 200, 200)" />
+                <rect x="195" y="35" width="10" height="20" fill="url(#heroGradient)" rx="2"
+                  transform="rotate(300, 200, 200)" />
+                <rect x="195" y="35" width="10" height="20" fill="url(#heroGradient)" rx="2"
+                  transform="rotate(330, 200, 200)" />
+              </g>
+              <!-- Middle mechanical ring -->
+              <circle cx="200" cy="200" r="120" fill="none" stroke="url(#heroGradientReverse)" stroke-width="3"
+                stroke-dasharray="15 8" class="hero__circle hero__circle--2" />
+              <!-- Inner gear ring -->
+              <circle cx="200" cy="200" r="85" fill="none" stroke="url(#heroGradient)" stroke-width="2"
+                class="hero__circle hero__circle--3" />
+              <!-- Inner gear teeth - 8 symmetric teeth -->
+              <g class="hero__gear-inner" style="transform-origin: 200px 200px;">
+                <rect x="197" y="110" width="6" height="12" fill="url(#heroGradientReverse)" rx="1" />
+                <rect x="197" y="110" width="6" height="12" fill="url(#heroGradientReverse)" rx="1"
+                  transform="rotate(45, 200, 200)" />
+                <rect x="197" y="110" width="6" height="12" fill="url(#heroGradientReverse)" rx="1"
+                  transform="rotate(90, 200, 200)" />
+                <rect x="197" y="110" width="6" height="12" fill="url(#heroGradientReverse)" rx="1"
+                  transform="rotate(135, 200, 200)" />
+                <rect x="197" y="110" width="6" height="12" fill="url(#heroGradientReverse)" rx="1"
+                  transform="rotate(180, 200, 200)" />
+                <rect x="197" y="110" width="6" height="12" fill="url(#heroGradientReverse)" rx="1"
+                  transform="rotate(225, 200, 200)" />
+                <rect x="197" y="110" width="6" height="12" fill="url(#heroGradientReverse)" rx="1"
+                  transform="rotate(270, 200, 200)" />
+                <rect x="197" y="110" width="6" height="12" fill="url(#heroGradientReverse)" rx="1"
+                  transform="rotate(315, 200, 200)" />
+              </g>
+              <!-- Hexagonal core -->
+              <polygon points="200,150 243,175 243,225 200,250 157,225 157,175" fill="none" stroke="url(#heroGradient)"
+                stroke-width="2" class="hero__hexagon" />
+              <!-- Connection nodes at hexagon vertices -->
+              <circle cx="200" cy="150" r="6" fill="#ff6b35" class="hero__dot" />
+              <circle cx="243" cy="175" r="6" fill="#8b5cf6" class="hero__dot" />
+              <circle cx="243" cy="225" r="6" fill="#ff6b35" class="hero__dot" />
+              <circle cx="200" cy="250" r="6" fill="#8b5cf6" class="hero__dot" />
+              <circle cx="157" cy="225" r="6" fill="#ff6b35" class="hero__dot" />
+              <circle cx="157" cy="175" r="6" fill="#8b5cf6" class="hero__dot" />
+              <!-- Center initials -->
+              <text x="200" y="210" text-anchor="middle" fill="url(#heroGradient)" font-size="36" font-weight="700"
+                class="hero__initials">MA</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-indicator">
+        <span class="hero__scroll-text">Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section__title reveal-up">About Me</h2>
+        <div class="about__content">
+          <div class="about__image reveal-left">
+            <div class="about__avatar">
+              <svg viewBox="0 0 200 200" class="about__avatar-svg">
+                <defs>
+                  <linearGradient id="avatarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ff6b35" />
+                    <stop offset="100%" style="stop-color:#8b5cf6" />
+                  </linearGradient>
+                </defs>
+                <circle cx="100" cy="100" r="95" fill="none" stroke="url(#avatarGradient)" stroke-width="2" />
+                <circle cx="100" cy="75" r="35" fill="#2a2a2e" />
+                <path d="M100 120 Q50 120 40 170 L40 195 Q100 185 160 195 L160 170 Q150 120 100 120" fill="#2a2a2e" />
+                <circle cx="100" cy="75" r="30" fill="#3a3a3e" />
+                <ellipse cx="90" cy="70" rx="5" ry="6" fill="#1a1a1e" />
+                <ellipse cx="110" cy="70" rx="5" ry="6" fill="#1a1a1e" />
+                <path d="M92 88 Q100 94 108 88" fill="none" stroke="#1a1a1e" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+          </div>
+          <div class="about__text reveal-right">
+            <p class="about__summary" id="aboutSummary"></p>
+            <div class="about__stats" id="aboutStats">
+              <div class="about__stat">
+                <span class="about__stat-value">5+</span>
+                <span class="about__stat-label">Years Experience</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-value">50+</span>
+                <span class="about__stat-label">Projects Completed</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-value">20+</span>
+                <span class="about__stat-label">Happy Clients</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section__title reveal-up">Skills & Expertise</h2>
+        <div class="skills__grid" id="skillsGrid">
+          <!-- Skills will be dynamically rendered -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section__title reveal-up">Featured Projects</h2>
+        <div class="projects__filters reveal-up" id="projectFilters">
+          <button class="projects__filter active" data-filter="all">All</button>
+          <button class="projects__filter" data-filter="Frontend">Frontend</button>
+          <button class="projects__filter" data-filter="Full-Stack">Full-Stack</button>
+          <button class="projects__filter" data-filter="AI">AI</button>
+        </div>
+        <div class="projects__grid" id="projectsGrid">
+          <!-- Projects will be dynamically rendered -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <h2 class="section__title reveal-up">Work Experience</h2>
+        <div class="experience__timeline" id="experienceTimeline">
+          <!-- Experience will be dynamically rendered -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section__title reveal-up">Get In Touch</h2>
+        <p class="contact__intro reveal-up">Have a project in mind or want to collaborate? I'd love to hear from you.
+          Drop me a message and I'll get back to you as soon as possible.</p>
+        <div class="contact__content">
+          <form class="contact__form reveal-left" id="contactForm">
+            <div class="form__group">
+              <label for="name" class="form__label">Name</label>
+              <input type="text" id="name" name="name" class="form__input" placeholder="Your name" required>
+              <span class="form__error" id="nameError"></span>
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__label">Email</label>
+              <input type="email" id="email" name="email" class="form__input" placeholder="your.email@example.com"
+                required>
+              <span class="form__error" id="emailError"></span>
+            </div>
+            <div class="form__group">
+              <label for="message" class="form__label">Message</label>
+              <textarea id="message" name="message" class="form__input form__textarea" placeholder="Your message..."
+                rows="5" required></textarea>
+              <span class="form__error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+            <div class="form__success" id="formSuccess">Thank you! Your message has been sent successfully.</div>
+          </form>
+          <div class="contact__info reveal-right">
+            <div class="contact__card">
+              <h3 class="contact__card-title">Direct Contact</h3>
+              <a href="" class="contact__email" id="contactEmail"></a>
+            </div>
+            <div class="contact__card">
+              <h3 class="contact__card-title">Connect With Me</h3>
+              <div class="contact__socials" id="contactSocials">
+                <!-- Socials will be dynamically rendered -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__top">
+        <a href="#home" class="logo footer__logo">MA</a>
+        <div class="footer__socials" id="footerSocials">
+          <!-- Socials will be dynamically rendered -->
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; <span id="footerYear"></span> Mohamed Abdallah. All rights reserved.</p>
+        <a href="#home" class="footer__back-to-top" id="backToTop">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6" />
+          </svg>
+          Back to Top
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
