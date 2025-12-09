@@ -76,6 +76,16 @@ const portfolioData = {
             links: {
                 source: "https://github.com/mido1732002003/code-rag"
             }
+        },
+        {
+            title: "Image Caption Generator",
+            description: "An intelligent application that generates descriptive captions for images using the Qwen3-VL-30B-A3B-Instruct model. Features a modern UI and seamless integration with Hugging Face for state-of-the-art vision-language capabilities.",
+            tech: ["Python", "Hugging Face", "Qwen3-VL", "Railway", "Vercel"],
+            category: "AI",
+            links: {
+                live: "https://reasonable-success-production-c17a.up.railway.app/",
+                source: "https://github.com/mido1732002003/ICG"
+            }
         }
     ],
 
